@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Hope Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <div class="event-detail" id="eventDetailContainer">
+            <!-- Loaded dynamically via API -->
+        </div>
+
+        <!-- Weather Section (Bonus Feature) -->
+        <div class="weather-card" id="weatherCard" style="display:none; background:white; padding:1.5rem; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); margin-bottom:2rem;">
+            <h3 style="color:#2c3e50; margin-bottom:1rem;">🌤️ Event Location Weather</h3>
+            <div id="weatherContent"></div>
+        </div>
+
+        <!-- Registrations Section (NEW for A3) -->
+        <div class="registrations-section" style="background:white; padding:2rem; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); margin-bottom:2rem;">
+            <h3 style="color:#2c3e50; margin-bottom:1.5rem; border-left:4px solid #3498db; padding-left:1rem;">Recent Registrations</h3>
+            <div id="registrationsList">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Hope Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/event.js"></script>
+</body>
+</html>

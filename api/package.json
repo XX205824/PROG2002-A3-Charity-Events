@@ -1,0 +1,11 @@
+{
+    "name": "charity-events-api",
+    "version": "1.0.0",
+    "description": "PROG2002 A2 Charity Events REST API",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.18.2",
+      "mysql2": "^3.6.0",
+      "cors": "^2.8.5"
+    }
+  }

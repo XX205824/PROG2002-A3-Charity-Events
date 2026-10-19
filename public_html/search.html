@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Events - Hope Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="section-title">Find Charity Events</h2>
+        
+        <!-- Search Form -->
+        <form class="search-form" id="searchForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Event Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location Keyword</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. Sydney, Opera House">
+                </div>
+                <div class="form-group">
+                    <label for="category">Event Category</label>
+                    <select id="category" name="category_id">
+                        <option value="">All Categories</option>
+                        <!-- Loaded dynamically -->
+                    </select>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Search Events</button>
+                <button type="button" class="btn btn-secondary" id="clearBtn">Clear Filters</button>
+            </div>
+        </form>
+
+        <!-- Error Message -->
+        <div class="error-msg" id="errorMsg"></div>
+
+        <!-- Search Results -->
+        <h3 class="section-title" style="font-size: 1.4rem;">Search Results</h3>
+        <div class="events-grid" id="resultsContainer">
+            <p style="color:#666;">Select filters and click Search to find events</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Hope Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
